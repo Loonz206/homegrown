@@ -1,0 +1,83 @@
+/*----Grid Foundation----*/
+
+/*1218 Reponsive Grid - Lenny Peters lenny@lennypeters.com - concept responsive grid*/
+
+.container {
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.row {
+	width: 100%;
+	max-width: 1218px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col13,.col14,.col15,.col16 {
+	margin-right:2.4630541871921183%; /* 30px / 1218px */
+	float:left;
+	min-height:1px;
+	}
+	
+.last {
+margin-right: 0px;
+}	
+	
+.col1 { width:3.9408866995073892%; /* 48px / 1218px */}
+.col2 { width:10.344827586206897%; /* 126px / 1218px */}
+.col3 { width:16.748768472906402%; /* 204px / 1218px */}
+.col4 { width:23.15270935960591%; /* 282px / 1218px */}
+.col5 { width:29.55665024630542%; /* 360px / 1218px */}
+.col6 { width:35.960591133004925%; /* 438px / 1218px */}
+.col7 { width:42.364532019704434%; /* 516px / 1218px */}
+.col8 { width:48.76847290640394%; /* 594px / 1218px */}
+.col9 { width:55.172413793103445%; /* 672px / 1218px */}
+.col10 { width:61.57635467980296%; /* 750px / 1218px */}
+.col11 { width:67.98029556650246%; /* 828px / 1218px */}
+.col12 { width:74.38423645320196%; /* 906px / 1218px */}
+.col13 { width:80.78817733990148%; /* 984px / 1218px */}
+.col14 { width:87.192118226601%; /* 1062px / 1218px */}
+.col15 { width:93.59605911330048%; /* 1140px / 1218px */}
+.col16 { width:100%; /*1218px*/}
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	}
+	
+	}
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	-webkit-text-size-adjust: none;
+	}
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.row .col1, .row .col2, .row .col3, .row .col4, .row .col5, .row .col6, .row .col7, .row .col8, .row .col9, .row .col10, .row .col11, .row .col12, .row .col13, .row .col14, .row .col15, .row .col16 {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+}

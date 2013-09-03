@@ -1,0 +1,251 @@
+/*
+Theme Name: Homegrown
+Theme URI: http://wordpress.org/
+Description: Creation for Lenny Peters Template/Creations
+Author: Lenny Peters
+Author URI: http://lennypeters.com
+Version: 1.0
+Tags: black, white, three-columns, responsive, 
+custom-header, custom-background, 
+threaded-comments, sticky-post, translation-ready, 
+microformats, rtl-language-support, editor-style, 
+custom-menu (optional)
+
+License: 
+GNU General Public License, version 3 (GPL-3.0)
+License URI:http://opensource.org/licenses/GPL-3.0
+
+General comments (This is a theme created by Lenny Peters for a purpose of a resume driven template. This is free to re-work and distribute with conditions that I the author is credited for the original works).
+*/
+
+/*COLORS
+
+MouseGray (Blue Gray) - #75838C
+ColdBreath (Flat Green) - #A6B2A6
+Silent and Starving (Tan) - #F2E3C6
+Shining Tommorow (Peachish) - #F89085
+Prospering (Purple) - #533551
+
+*/
+
+
+
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+@font-face {
+	font-family: 'entypo';
+	src: url('entypo.eot');
+	src: url('entypo.eot?#iefix') format('embedded-opentype'),  url('entypo.woff') format('woff'),  url('entypo.ttf') format('truetype'),  url('entypo.svg#entypo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'entypo-social';
+	src: url('entypo-social.eot');
+	src: url('entypo-social.eot?#iefix') format('embedded-opentype'),  url('entypo-social.woff') format('woff'),  url('entypo-social.ttf') format('truetype'),  url('entypo-social.svg#entypo-social') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*---------------------TYPE-----------------------*/
+
+body {
+	font-family:'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-size:1em;
+	line-height:1.5em;
+	color:#333333;
+	margin:auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+	font-size:3em;
+	margin-bottom:.5em;
+	line-height:1em;
+}
+
+h2 {
+	font-size:2em;
+	margin-bottom:.75em;
+}
+
+h3 {
+	font-size:1.5em;
+	margin-bottom:1em;
+	line-height:1em;
+}
+
+h4 {
+	font-size:1.2em;
+	margin-bottom:1.25em;
+	line-height:1.25em;
+}
+
+h5 {
+	font-size:1em;
+	margin-bottom:1.5em;
+	font-weight:700;
+}
+
+h6 {
+	font-size:1em;
+	font-weight:700;
+}
+
+.subtitle {
+	opacity:.5;
+}
+
+em,dfn {
+	font-family:'Open Sans Condensed',Arial, Helvetica, sans-serif;
+	font-weight:300italic;
+}
+
+strong {
+	font-family:'Open Sans Condensed',Arial, Helvetica, sans-serif;
+	font-weight:700;
+}
+	
+
+a:link, a:visited {
+	color:#c69ac3;
+	font-weight:700;
+	text-decoration:none;
+	}
+	
+a:hover, a:active, a:focus {
+	color:#784074;
+	}
+	
+p  { 
+	margin: 0 0 1.5em; 
+	}	
+	
+blockquote {
+	margin:1.5em;
+	font-family:'Open Sans Condensed',Arial, Helvetica, sans-serif;	
+	font-style:italic;
+	font-weight:700;
+	font-size:2em;
+	line-height:1em;
+}
+
+sup, sub {
+	line-height:0px;
+}
+
+abbr, acronym {
+	border-bottom:1px dotted #666;
+}
+
+address {
+	margin: 0px 0px 1.5em;
+	font-family:'Open Sans Condensed',Arial, Helvetica, sans-serif;
+	font-style:italic;
+}
+
+del {
+	color:#666666;
+}
+
+pre {
+	margin:1.5em;
+	white-space: pre;
+}
+
+pre, code, tt {
+	font-size:1em;
+	font-family:'andale mono', 'lucida console', monospace;
+	line-height:1.5em;
+}
+
+/*---------------------LISTS-----------------------*/
+
+ul, ol      { 
+	margin: 0px 1.5em 1.5em 0px; 
+	padding-left: 1.5em; 
+	}
+	
+dl          { 
+	margin: 0px 0px 1.5em 0px; 
+	}
+dl dt       { 
+	font-weight: 700; 
+	}
+dd          { 
+	margin-left: 1.5em;
+	}	
+	
+	
+/*------LAYOUT------*/
+
+.container {
+	width:94%;
+	margin:auto;
+	}
+	
+.padding {
+	padding:10px;
+}
+	
+header {
+	height:75px;
+	background-color:#000;
+}
+
+.two {
+	width:50%;
+}
+
+.thirds {
+	width:33%;
+}
+
+.fourth{
+	width:25%;
+}
+
+.fifth {
+	width:20%;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.clearboth {
+	clear:both;
+}
+
+.center {
+	text-align:center;
+}
+
+	
+
+
+
+
+	
+
+
+
+
+
