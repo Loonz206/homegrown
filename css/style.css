@@ -206,22 +206,6 @@ header {
 	background-color:#000;
 }
 
-.two {
-	width:50%;
-}
-
-.thirds {
-	width:33%;
-}
-
-.fourth{
-	width:25%;
-}
-
-.fifth {
-	width:20%;
-}
-
 .left {
 	float:left;
 }
@@ -260,7 +244,7 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover, nav a:active, nav a:focus {
-	color:#784074;
+	color:#c69ac3;
 }
 
 #hero {
