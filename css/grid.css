@@ -3,8 +3,8 @@
 /*1218 Reponsive Grid - Lenny Peters lenny@lennypeters.com - concept responsive grid*/
 
 .container {
-padding-left: 15px;
-padding-right: 15px;
+padding-left: -15px;
+padding-right: -15px;
 }
 
 .row {
