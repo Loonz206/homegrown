@@ -119,6 +119,9 @@ strong {
 	font-weight:700;
 }
 	
+a {
+   outline: 0;
+}
 
 a:link, a:visited {
 	color:#c69ac3;
@@ -192,11 +195,6 @@ dd          {
 	
 /*------LAYOUT------*/
 
-.container {
-	width:94%;
-	margin:auto;
-	}
-	
 .padding {
 	padding:10px;
 }
@@ -247,14 +245,18 @@ nav a:hover, nav a:active, nav a:focus {
 	color:#c69ac3;
 }
 
-#hero {
-	height:300px;
+p {
+	background-color:#000;
+	text-align:center;
+	height:100px;
+	color:#FFF;
+	line-height:100px;
 }
 
-aside {
-	height:300px;
-	background-color:#CCC;
-}
+
+
+
+
 
 
 	

@@ -1,83 +1,447 @@
-/*----Grid Foundation----*/
+/*Foundation Grid System
+https://github.com/zurb/foundation
+MIT Open License 
+*/
 
-/*1218 Reponsive Grid - Lenny Peters lenny@lennypeters.com - concept responsive grid*/
-
-.container {
-padding-left: -15px;
-padding-right: -15px;
-}
 
 .row {
-	width: 100%;
-	max-width: 1218px;
-	min-width: 755px;
-	margin: 0 auto;
-	overflow: hidden;
-}
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse .column,
+  .row.collapse .columns {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    float: left; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+    *zoom: 1; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none;
+      *zoom: 1; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }
 
-.col1,.col2,.col3,.col4,.col5,.col6,.col7,.col8,.col9,.col10,.col11,.col12,.col13,.col14,.col15,.col16 {
-	margin-right:2.4630541871921183%; /* 30px / 1218px */
-	float:left;
-	min-height:1px;
-	}
-	
-.last {
-margin-right: 0px;
-}	
-	
-.col1 { width:3.9408866995073892%; /* 48px / 1218px */}
-.col2 { width:10.344827586206897%; /* 126px / 1218px */}
-.col3 { width:16.748768472906402%; /* 204px / 1218px */}
-.col4 { width:23.15270935960591%; /* 282px / 1218px */}
-.col5 { width:29.55665024630542%; /* 360px / 1218px */}
-.col6 { width:35.960591133004925%; /* 438px / 1218px */}
-.col7 { width:42.364532019704434%; /* 516px / 1218px */}
-.col8 { width:48.76847290640394%; /* 594px / 1218px */}
-.col9 { width:55.172413793103445%; /* 672px / 1218px */}
-.col10 { width:61.57635467980296%; /* 750px / 1218px */}
-.col11 { width:67.98029556650246%; /* 828px / 1218px */}
-.col12 { width:74.38423645320196%; /* 906px / 1218px */}
-.col13 { width:80.78817733990148%; /* 984px / 1218px */}
-.col14 { width:87.192118226601%; /* 1062px / 1218px */}
-.col15 { width:93.59605911330048%; /* 1140px / 1218px */}
-.col16 { width:100%; /*1218px*/}
+.column,
+.columns {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left; }
 
-/* Smaller screens */
+@media only screen {
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left; }
 
-@media only screen and (max-width: 1023px) {
+  .small-1 {
+    position: relative;
+    width: 8.33333%; }
 
-	body {
-	font-size: 0.8em;
-	line-height: 1.5em;
-	}
-	
-	}
+  .small-2 {
+    position: relative;
+    width: 16.66667%; }
 
+  .small-3 {
+    position: relative;
+    width: 25%; }
 
-/* Mobile */
+  .small-4 {
+    position: relative;
+    width: 33.33333%; }
 
-@media handheld, only screen and (max-width: 767px) {
+  .small-5 {
+    position: relative;
+    width: 41.66667%; }
 
-	body {
-	-webkit-text-size-adjust: none;
-	}
-	
-	.row, body, .container {
-	width: 100%;
-	min-width: 0;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	}
-	
-	.row .col1, .row .col2, .row .col3, .row .col4, .row .col5, .row .col6, .row .col7, .row .col8, .row .col9, .row .col10, .row .col11, .row .col12, .row .col13, .row .col14, .row .col15, .row .col16 {
-	width: auto;
-	float: none;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	}
+  .small-6 {
+    position: relative;
+    width: 50%; }
 
-}
+  .small-7 {
+    position: relative;
+    width: 58.33333%; }
+
+  .small-8 {
+    position: relative;
+    width: 66.66667%; }
+
+  .small-9 {
+    position: relative;
+    width: 75%; }
+
+  .small-10 {
+    position: relative;
+    width: 83.33333%; }
+
+  .small-11 {
+    position: relative;
+    width: 91.66667%; }
+
+  .small-12 {
+    position: relative;
+    width: 100%; }
+
+  .small-offset-1 {
+    position: relative;
+    margin-left: 8.33333%; }
+
+  .small-offset-2 {
+    position: relative;
+    margin-left: 16.66667%; }
+
+  .small-offset-3 {
+    position: relative;
+    margin-left: 25%; }
+
+  .small-offset-4 {
+    position: relative;
+    margin-left: 33.33333%; }
+
+  .small-offset-5 {
+    position: relative;
+    margin-left: 41.66667%; }
+
+  .small-offset-6 {
+    position: relative;
+    margin-left: 50%; }
+
+  .small-offset-7 {
+    position: relative;
+    margin-left: 58.33333%; }
+
+  .small-offset-8 {
+    position: relative;
+    margin-left: 66.66667%; }
+
+  .small-offset-9 {
+    position: relative;
+    margin-left: 75%; }
+
+  .small-offset-10 {
+    position: relative;
+    margin-left: 83.33333%; }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: right; }
+
+  [class*="column"] + [class*="column"].end {
+    float: left; }
+
+  .column.small-centered,
+  .columns.small-centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
+/* Styles for screens that are atleast 768px; */
+@media only screen and (min-width: 48em) {
+  .large-1 {
+    position: relative;
+    width: 8.33333%; }
+
+  .large-2 {
+    position: relative;
+    width: 16.66667%; }
+
+  .large-3 {
+    position: relative;
+    width: 25%; }
+
+  .large-4 {
+    position: relative;
+    width: 33.33333%; }
+
+  .large-5 {
+    position: relative;
+    width: 41.66667%; }
+
+  .large-6 {
+    position: relative;
+    width: 50%; }
+
+  .large-7 {
+    position: relative;
+    width: 58.33333%; }
+
+  .large-8 {
+    position: relative;
+    width: 66.66667%; }
+
+  .large-9 {
+    position: relative;
+    width: 75%; }
+
+  .large-10 {
+    position: relative;
+    width: 83.33333%; }
+
+  .large-11 {
+    position: relative;
+    width: 91.66667%; }
+
+  .large-12 {
+    position: relative;
+    width: 100%; }
+
+  .row .large-offset-1 {
+    position: relative;
+    margin-left: 8.33333%; }
+
+  .row .large-offset-2 {
+    position: relative;
+    margin-left: 16.66667%; }
+
+  .row .large-offset-3 {
+    position: relative;
+    margin-left: 25%; }
+
+  .row .large-offset-4 {
+    position: relative;
+    margin-left: 33.33333%; }
+
+  .row .large-offset-5 {
+    position: relative;
+    margin-left: 41.66667%; }
+
+  .row .large-offset-6 {
+    position: relative;
+    margin-left: 50%; }
+
+  .row .large-offset-7 {
+    position: relative;
+    margin-left: 58.33333%; }
+
+  .row .large-offset-8 {
+    position: relative;
+    margin-left: 66.66667%; }
+
+  .row .large-offset-9 {
+    position: relative;
+    margin-left: 75%; }
+
+  .row .large-offset-10 {
+    position: relative;
+    margin-left: 83.33333%; }
+
+  .row .large-offset-11 {
+    position: relative;
+    margin-left: 91.66667%; }
+
+  .push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto; }
+
+  .pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto; }
+
+  .push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto; }
+
+  .pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto; }
+
+  .push-3 {
+    position: relative;
+    left: 25%;
+    right: auto; }
+
+  .pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto; }
+
+  .push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto; }
+
+  .pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto; }
+
+  .push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto; }
+
+  .pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto; }
+
+  .push-6 {
+    position: relative;
+    left: 50%;
+    right: auto; }
+
+  .pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto; }
+
+  .push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto; }
+
+  .pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto; }
+
+  .push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto; }
+
+  .pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto; }
+
+  .push-9 {
+    position: relative;
+    left: 75%;
+    right: auto; }
+
+  .pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto; }
+
+  .push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto; }
+
+  .pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto; }
+
+  .push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto; }
+
+  .pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto; }
+
+  .small-push-1 {
+    left: inherit; }
+
+  .small-pull-1 {
+    right: inherit; }
+
+  .small-push-2 {
+    left: inherit; }
+
+  .small-pull-2 {
+    right: inherit; }
+
+  .small-push-3 {
+    left: inherit; }
+
+  .small-pull-3 {
+    right: inherit; }
+
+  .small-push-4 {
+    left: inherit; }
+
+  .small-pull-4 {
+    right: inherit; }
+
+  .small-push-5 {
+    left: inherit; }
+
+  .small-pull-5 {
+    right: inherit; }
+
+  .small-push-6 {
+    left: inherit; }
+
+  .small-pull-6 {
+    right: inherit; }
+
+  .small-push-7 {
+    left: inherit; }
+
+  .small-pull-7 {
+    right: inherit; }
+
+  .small-push-8 {
+    left: inherit; }
+
+  .small-pull-8 {
+    right: inherit; }
+
+  .small-push-9 {
+    left: inherit; }
+
+  .small-pull-9 {
+    right: inherit; }
+
+  .small-push-10 {
+    left: inherit; }
+
+  .small-pull-10 {
+    right: inherit; }
+
+  .small-push-11 {
+    left: inherit; }
+
+  .small-pull-11 {
+    right: inherit; }
+
+  .column.small-centered,
+  .columns.small-centered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left !important; }
+
+  .column.large-centered,
+  .columns.large-centered {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
