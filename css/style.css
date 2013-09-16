@@ -29,7 +29,7 @@ Prospering (Purple) - #533551
 */
 
 
-
+/*---------------------EFFECTS-----------------------*/
 
 * {
 	-moz-box-sizing: border-box;
@@ -42,6 +42,9 @@ Prospering (Purple) - #533551
 	background-repeat: no-repeat;
 	vertical-align: middle;
 }
+
+/*---------------------FONTS-----------------------*/
+
 @font-face {
 	font-family: 'entypo';
 	src: url('entypo.eot');
@@ -103,10 +106,6 @@ h5 {
 h6 {
 	font-size:1em;
 	font-weight:700;
-}
-
-.subtitle {
-	opacity:.5;
 }
 
 em,dfn {
@@ -193,15 +192,24 @@ dd          {
 	}	
 	
 	
-/*------LAYOUT------*/
+/*------LAYOUT TEST------*/
+
+/*p {
+	background-color:#000;
+	text-align:center;
+	height:100px;
+	color:#FFF;
+	line-height:100px;
+}*/
+
+/*------HELPER CLASSES------*/
+
+.subtitle {
+	opacity:.5;
+}
 
 .padding {
 	padding:10px;
-}
-	
-header {
-	height:75px;
-	background-color:#000;
 }
 
 .left {
@@ -216,9 +224,47 @@ header {
 	clear:both;
 }
 
-.center {
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
 	text-align:center;
 }
+
+.marginbottom {
+	margin-bottom:20px;
+}
+
+/*------LAYOUT------*/
+
+button {
+    background-color: #C69AC3;
+    border: 1px solid #666666;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #666666;
+}
+
+button:hover, button:focus, button:active {
+	opacity: .8;
+}
+	
+header {
+	height:75px;
+	background-color:#000;
+}
+
+
 
 nav li {
     display: inline-block;
@@ -245,16 +291,44 @@ nav a:hover, nav a:active, nav a:focus {
 	color:#c69ac3;
 }
 
-p {
-	background-color:#000;
-	text-align:center;
-	height:100px;
-	color:#FFF;
-	line-height:100px;
+fieldset {
+	background-color: #CCCCCC;
+    border: 1px solid #666666;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #666666;
 }
 
-.marginbottom {
-	margin-bottom:20px;
+input, textarea {
+  border: 2px #666666 solid;
+  margin-bottom:10px;
+}
+
+legend {
+	color:#666666;
+	text-shadow:1px 1px 0 #FFFFFF;
+}
+
+input.button {
+	background-color: #C69AC3;
+    border: 1px solid #666666;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 0 0 #FFFFFF inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #666666;
+}
+
+input.button:hover, input.button:focus, input.button:active {
+	opacity: .8;
 }
 
 
