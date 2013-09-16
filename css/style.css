@@ -43,6 +43,13 @@ Prospering (Purple) - #533551
 	vertical-align: middle;
 }
 
+img,
+embed,
+object,
+video {
+max-width: 100%;
+}
+
 /*---------------------FONTS-----------------------*/
 
 @font-face {
