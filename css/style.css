@@ -1,11 +1,7 @@
-/*
-Theme Name: Homegrown
-Theme URI: http://wordpress.org/
-Description: Creation for Lenny Peters Template/Creations
-Author: Lenny Peters
-Author URI: http://lennypeters.com
-Version: 1.0
-Tags: black, white, purple, em based, responsive, presentational
+/* Theme Name: Homegrown Theme URI: http://wordpress.org/ Description:
+Creation for Lenny Peters Template/Creations Author: Lenny Peters
+Author URI: http://lennypeters.com Version: 1.0 Tags: black, white,
+purple, em based, responsive, presentational
 
 License: 
 GNU General Public License, version 3 (GPL-3.0)
@@ -243,6 +239,13 @@ dd          {
 	margin-bottom:1.25em; /* 20px / 16px */
 }
 
+.block {
+	height:250px;
+	margin-bottom:20px;
+}
+
+
+
 /*------LAYOUT------*/
 
 button {
@@ -374,6 +377,12 @@ button.large {
 	display: block;
 	margin:auto;
 }
+
+img {
+	margin:0px 0px 20px 0px;
+}
+
+
 
 
 
