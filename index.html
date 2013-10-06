@@ -18,6 +18,7 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans+Condensed:300,700,300italic' rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 <link rel="stylesheet" href="css/grid.css" type="text/css"/>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css"/>
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
 <!--[if lte IE 8]>
 <script type="text/javascript">
@@ -30,16 +31,17 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link href="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"/>
+<link href="js/jquery-1.10.2.js" type="text/javascript"/>
+<link href="js/lightbox.js" type="text/javascript"/>
 <link href="js/modernizr2.6.2custom.js" type="text/javascript"/>
 </head>
 
 <body>
 
-<header class="marginbottom">
+<header>
 	<nav>
     	<ul>
-        	<li><a href="javascript:;">About</a></li>
+        	  <li><a href="javascript:;">About</a></li>
             <li><a href="javascript:;">Portfolio</a></li>
             <li><a href="javascript:;">Contact</a></li>
         </ul>
@@ -47,28 +49,94 @@
 </header>
 
 <div id="slider" class="row">
-	<div class="small-12 columns"><a href="javascript:;"><img src="http://placehold.it/720x405/" alt="slider1"/></a></div>
+  <div class="small-12 columns"><a href="javascript:;"><img src="http://placehold.it/720x405/" alt="slider1"/></a></div>
 </div>
 
 <div id="logo" class="row">
-	<div class="small-8 small-offset-2 columns"><h1 class="aligncenter">This is the Logo</h1><h3 class="aligncenter subtitle">Subtitle</h3></div>
+  <div class="small-8 small-offset-2 columns"><h1 class="aligncenter">This is the Headline</h1><h3 class="aligncenter subtitle">Subtitle</h3></div>
 </div>
+
+<a href="http://placehold.it/300x400/" data-lightbox="image-1" title="My caption">image #1</a>
+
+
+
 
 <div id="projects" class="row">
-	<div class="small-6 large-3 columns block"><img src="http://placehold.it/300x169/" alt=""/><button>LINK</button></div>
-    <div class="small-6 large-3 columns block"><img src="http://placehold.it/300x169/" alt=""/><button>LINK</button></div>
-	<div class="small-6 large-3 columns block"><img src="http://placehold.it/300x169/" alt=""/><button>LINK</button></div>
-    <div class="small-6 large-3 columns block"><img src="http://placehold.it/300x169/" alt=""/><button>LINK</button></div>
+	<div class="large-6 columns">
+      <h2>A curious fascination with the web.</h2>
+      <p>Since Myspace, I have been a avid fan of website creation and implementation. A front-end developer with a nack for emerging technologies.</p>
+      <p>Passionate about moving forward with new ideals and progressive thought when creating remarkable user-interfaces and designs for company advancement.</p>
+  </div>
+
+
+  <div class="small-6 large-6 columns">
+      <h2>A curious fascination with the web.</h2>
+      <p>Since Myspace, I have been a avid fan of website creation and implementation. A front-end developer with a nack for emerging technologies.</p>
+      <p>Passionate about moving forward with new ideals and progressive thought when creating remarkable user-interfaces and designs for company advancement.</p>
+  </div>
+
+
+  <div class="large-6 columns">
+      <h2>A curious fascination with the web.</h2>
+      <p>Since Myspace, I have been a avid fan of website creation and implementation. A front-end developer with a nack for emerging technologies.</p>
+      <p>Passionate about moving forward with new ideals and progressive thought when creating remarkable user-interfaces and designs for company advancement.</p>
+  </div>
+
+
+  <div class="large-6 columns">
+      <h2>A curious fascination with the web.</h2>
+      <p>Since Myspace, I have been a avid fan of website creation and implementation. A front-end developer with a nack for emerging technologies.</p>
+      <p>Passionate about moving forward with new ideals and progressive thought when creating remarkable user-interfaces and designs for company advancement.</p>
+  </div>
 </div>
+
 
 <div id="bio" class="row">
-	<div class="small-12 large-8 columns"><p>Bio</p></div>
-    <div class="small-12 large-4 columns"><p>Bio Pic</p></div>
+	 <div id="about" class="small-12 large-8 columns"><h2>Bio</h2><p>Lenny lives in the Ballard area with his girlfriend who also does web development. A huge soccer fan and former classic bartender.</p></div>
+      <div id="bio_pic" class="small-12 large-4 columns"><h2>Picture</h2><p>Lenny lives in the Ballard area with his girlfriend who also does web development. A huge soccer fan and former classic bartender.</p></div>
 </div>
 
-<div class="row">
-	<div class="small-12"><p>Footer</p></div>
-</div>
+
+<footer>
+  <div class="row">
+	 <div class="small-12 large-3 columns">
+      <h5>Label</h5>
+      <ul>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+      </ul>
+   </div>
+   <div class="small-12 large-3 columns">
+      <h5>Label</h5>
+      <ul>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+      </ul>
+   </div>
+   <div class="small-12 large-3 columns">
+      <h5>Label</h5>
+      <ul>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+      </ul>
+   </div>
+   <div class="small-12 large-3 columns">
+      <h5>Label</h5>
+      <ul>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 1</a></li>
+      </ul>
+   </div>
+ </div>
+</footer>
 
 
 
@@ -91,6 +159,8 @@
 </a>
 </p>
 <!-- end validation buttons -->	
+
+
 
 
 </body>
