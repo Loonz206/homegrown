@@ -21,6 +21,7 @@ Prospering (Purple) - #533551
 */
 
 
+
 /*---------------------EFFECTS-----------------------*/
 
 * {
@@ -42,7 +43,9 @@ video {
 max-width: 100%;
 }
 
-/*---------------------FONTS-----------------------*/
+/*---------------------ICON FONTS-----------------------*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
 @font-face {
 	font-family: 'entypo';
