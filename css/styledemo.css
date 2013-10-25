@@ -88,7 +88,7 @@ h2 {
 h3 {
 	font-size:1.5em;
 	margin-bottom:1em;
-	line-height:1.25em;
+	line-height:1.25em; /*Changed from 1em*/
 }
 
 h4 {
@@ -191,7 +191,7 @@ dd          {
 	}	
 	
 	
-/*------LAYOUT TEST------*/
+/*------LAYOUT TEST (Method to see where divs lay visually)------*/
 
 /*p {
 	background-color:#000;
@@ -265,12 +265,6 @@ dd          {
 	border: 5px solid #333333;
 	box-shadow: 3px 3px 2px #666666;
 }
-
-.centered {
-	text-align: center;
-}
-
-
 
 /*------RESPONSIVE NAV TOGGLE------*/
 
@@ -471,14 +465,27 @@ footer a:hover, footer a:active, footer a:focus {
 	z-index: 10px;
 }
 
+footer p.aligncenter {
+	padding-bottom:20px;
+	margin:0px;
+}
+
+/*---- Mobile First - Forget shoehorning stuff, I am serious as a knife-wielding tiger leaping across the room toward a baby.
+ It's not worth the pain. Ever.  ----*/
+
+/*Styles for screens that are at least 600px; */
+
+@media only screen and (min-width: 37.5em) {
 
 
-/* Mobile First - Forget shoehorning stuff 
-Styles for screens that are atleast 768px; */
+}
+
+
+/*Styles for screens that are at least 768px; */
 
 @media only screen and (min-width: 48em) {
 	.centered {
-		text-align: left
+		text-align: left;
 	}
 
 }
