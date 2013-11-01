@@ -470,6 +470,18 @@ footer p.aligncenter {
 	margin:0px;
 }
 
+/*-----SLIDER STYLES-----*/
+
+#slider li {
+	list-style-type: none;
+}
+
+
+
+
+
+
+
 /*---- Mobile First - Forget shoehorning stuff, I am serious as a knife-wielding tiger leaping across the room toward a baby.
  It's not worth the pain. Ever.  ----*/
 
@@ -489,6 +501,9 @@ footer p.aligncenter {
 	}
 
 }
+
+
+
 
 
 
