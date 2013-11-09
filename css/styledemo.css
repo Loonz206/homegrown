@@ -16,6 +16,7 @@ MouseGray (Blue Gray) - #75838C
 ColdBreath (Flat Green) - #A6B2A6
 Silent and Starving (Tan) - #F2E3C6
 Shining Tommorow (Peachish) - #F89085
+Lighter Colored Purple (Purple)- #9F3698
 Prospering (Purple) - #533551
 
 */
@@ -391,9 +392,9 @@ input.button:hover, input.button:focus, input.button:active {
 }
 
 button, button:visited {
-    background-color:#3498db;
-    border: 1px solid #2980b9;
-    box-shadow: 4px 4px 0 0 #2980b9;
+    background-color:#9F3698;
+    border: 1px solid #533551;
+    box-shadow: 4px 4px 0 0 #533551;
     display: block;
     padding: 1.25em; /* 20px / 16px */
     text-align: center;
@@ -409,8 +410,9 @@ button:hover {
 }
 
 button.small {
-    border: 1px solid #2980b9;
-    box-shadow: 4px 4px 0 0 #2980b9;
+	background-color:#9F3698;
+    border: 1px solid #533551;
+    box-shadow: 4px 4px 0 0 #533551;
     display: block;
     padding:1.25em; /* 20px / 16px */
     text-align: center;
@@ -419,8 +421,9 @@ button.small {
   }
 
 button.large {
-    border: 1px solid #2980b9;
-    box-shadow: 4px 4px 0 0 #2980b9;
+    background-color:#9F3698;
+    border: 1px solid #533551;
+    box-shadow: 4px 4px 0 0 #533551;
     display: block;
     padding:1.25em; /* 20px / 16px */
     text-align: center;
@@ -470,6 +473,13 @@ footer p.aligncenter {
 	margin:0px;
 }
 
+/*------IMAGE STYLES------*/
+
+figure img {
+	padding:10px 0px 10px 0px;
+}
+
+
 /*-----SLIDER STYLES-----*/
 
 #slider li {
@@ -488,7 +498,6 @@ footer p.aligncenter {
 /*Styles for screens that are at least 600px; */
 
 @media only screen and (min-width: 37.5em) {
-
 
 }
 
