@@ -63,7 +63,7 @@ max-width: 100% !important;
 /*---------------------TYPE-----------------------*/
 
 body {
-	font-family:'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family:'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:1em !important;
 	line-height:1.5em !important;
 	color:#333333;
@@ -110,16 +110,16 @@ h6 {
 }
 
 em,dfn {
-	font-family:'Open Sans Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight:300italic;
 }
 
 strong {
-	font-family:'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family:'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight:700;
 }
 	
-a {
+a:focus {
    outline: 0;
 }
 
@@ -146,7 +146,7 @@ blockquote {
 }
 
 sup, sub {
-	line-height:0px;
+	line-height:0;
 }
 
 abbr, acronym {
@@ -154,7 +154,7 @@ abbr, acronym {
 }
 
 address {
-	margin: 0px 0px 1.5em;
+	margin: 0 0 1.5em;
 	font-family:'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-style:italic;
 }
@@ -164,7 +164,7 @@ del {
 }
 
 pre {
-	margin:1.5em;
+	padding:10px;
 	white-space: pre;
 }
 
@@ -177,12 +177,12 @@ pre, code, tt {
 /*---------------------LISTS-----------------------*/
 
 ul, ol      { 
-	margin: 0px 1.5em 1.5em 0px; 
+	margin: 0 1.5em 1.5em 0; 
 	padding-left: 1.5em; 
 	}
 	
 dl          { 
-	margin: 0px 0px 1.5em 0px; 
+	margin: 0 0 1.5em 0; 
 	}
 dl dt       { 
 	font-weight: 700; 
@@ -211,7 +211,7 @@ dd          {
 }
 
 .subtitle {
-	opacity:.5;
+	color:#666;
 }
 
 .padding {
@@ -267,6 +267,12 @@ dd          {
 	box-shadow: 3px 3px 2px #666666;
 }
 
+#bio figure img {
+	height: 280px;
+	width: 280px;
+	border-radius: 50%;
+}
+
 /*------RESPONSIVE NAV TOGGLE------*/
 
 nav a:link, nav a:visited {
@@ -292,7 +298,7 @@ a.menu-link {
 			float:right;
 		    display: block;
 		   	line-height: 3em;
-		   	padding:0em 1em;
+		   	padding:0 1em;
 		    font-family: 'Montserrat','Helvetica Neue', Helvetica, Arial, sans-serif;
 			text-transform: uppercase;	 
 			color:#fff;
@@ -352,28 +358,67 @@ a.menu-link {
 		}
 
 
-		fieldset {
-	background-color: #CCCCCC;
-    border: 1px solid #666666;
-    border-radius: 6px 6px 6px 6px;
-    box-shadow: 0 1px 0 0 #FFFFFF inset;
-    color: #FFFFFF;
-    display: inline-block;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 1px 1px 0 #666666;
+/*----------TABLE STYLES & FORMS-----------*/
+
+fieldset {
+	border:none;
+	padding:none;
+	margin:none;
 }
 
-input, textarea {
-  border: 2px #666666 solid;
-  margin-bottom:0.625em; /* 10px / 16px */
+
+label {
+	display: block;
+	margin:0 0 1em 0;
+	font-weight: bold;
 }
 
-legend {
-	color:#666666;
-	text-shadow:1px 1px 0 #FFFFFF;
+input[type="text"],input[type="email"] {
+	margin-bottom: 1em;
+	padding: 4px 6px;
+	height:40px;
+	width: 100%;
+	border:2px solid grey;
 }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border:2px solid #3498db;
+}
+
+select {
+	display: block;
+	margin-bottom: 1em;
+}
+
+textarea {
+	width:100%;
+	padding: 4px 6px;
+	min-height: 120px;
+	margin-bottom:1em;
+	border:2px solid grey;
+}
+
+input[type="submit"] {
+	margin-bottom: 1em;
+	width: 220px;
+	height: 40px;
+	border:none;
+	float:right;
+	background: #3498db;
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow:0 1px 1px black;
+	box-shadow: 0 2px 2px #CCC;
+}
+
+input[type="submit"]:hover {
+	background-color: #2980b9;
+}
+
+
 
 input.button {
 	background-color: #C69AC3;
@@ -400,6 +445,7 @@ button, button:visited {
     text-align: center;
     transition: all 0.1s cubic-bezier(0, 0, 0.25, 1) 0s;
     width:9.375em; /* 150px / 16px */
+    color:white;
 }
 
 button:hover {
@@ -432,7 +478,7 @@ button.large {
 }
 
 footer {
-	background-color: #a9a9a9;
+	background-color: #CCC;
 	width:100%;
 }
 
@@ -450,33 +496,49 @@ footer {
 	padding:20px;
 }
 
+footer {
+	margin:20px 0 0 0;
+}
+
+
+
 footer li {
 	list-style-type: none;
-	padding:20px 0px;
+	padding:20px 0;
 }
 
 footer a:link, footer a:visited {
 	color:#FFFFFF;
+	font-weight: bold;
 }
 
 footer a:hover, footer a:active, footer a:focus {
-	color:#333333;
+	color:purple;
 }
 
 #logo {
 	position: fixed;
-	z-index: 10px;
+	z-index: 10;
 }
 
 footer p.aligncenter {
 	padding-bottom:20px;
-	margin:0px;
+	margin:0;
+}
+
+#btt {
+	margin:20px 0;
 }
 
 /*------IMAGE STYLES------*/
 
 figure img {
-	padding:10px 0px 10px 0px;
+	padding:10px 0 10px 0;
+	text-align: center;
+}
+
+#bio figure img {
+	padding:0;
 }
 
 
@@ -495,9 +557,50 @@ figure img {
 /*---- Mobile First - Forget shoehorning stuff, I am serious as a knife-wielding tiger leaping across the room toward a baby.
  It's not worth the pain. Ever.  ----*/
 
+#projects  {
+		text-align: center;
+	} 
+
+#blogroll {
+	padding-top: 80px;
+}
+
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+}
+
+.breadcrumbs li {
+	display: inline;
+	list-style-image: none;
+	padding-right: 1em;
+}	
+
+.breadcrumbs a:hover {
+	border-bottom:1px dotted grey;
+}
+
+a.active {
+	border-bottom:1px dotted grey;
+}
+
+.singlepost {
+	padding-top: 80px;
+}
+
+
+
+
 /*Styles for screens that are at least 600px; */
 
 @media only screen and (min-width: 37.5em) {
+	figure {
+		text-align: center;
+	}
+
+	#projects {
+		text-align: left;
+	}
 
 }
 
@@ -509,7 +612,28 @@ figure img {
 		text-align: left;
 	}
 
+	.arrow_box {
+	position: relative;
 }
+.arrow_box:after {
+	left: 50%;
+	top:50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ffffff;
+	border-color:#000000;
+	border-color: rgba(0, 0, 0, 0);
+	border-width: 13px;
+	margin-left: -13px;
+}
+
+}
+
+
 
 
 

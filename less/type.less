@@ -1,0 +1,258 @@
+html {
+	font-size: 100.01%;
+}
+
+body {
+	font-size:100%;//16px
+	line-height: 1.6em;
+	color:@grey;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:@headline-font;
+	color:#06192E;
+	margin:1.25em 0; 
+}
+
+h1 {
+	font-size:3em;//36px
+}
+h2 {
+	font-size:2em;//32px
+	line-height: 1.5;
+}
+
+h3 {
+	font-size:1.5em;//24px
+}
+
+h4 {
+	font-size:1.3125em;//21px
+}
+
+h5 {
+	font-size:1.125em;//18px
+	font-weight:700;
+}
+
+h6 {
+	font-size:1em;//16px
+	font-weight:700;
+}
+
+em,dfn {
+	font-family:@body-font;
+	font-weight:300italic;
+}
+
+strong {
+	font-family:@body-font;
+	font-weight:700;
+}
+	
+a {
+   outline: 0;
+   text-decoration: none;
+   color:@blue;
+   .Transition (@prop: all, @time: 0.5s, @ease: linear);
+   &:hover, &:active, &:focus {
+   	color:lighten(@blue, 10%);
+   }
+}
+
+p  { 
+	line-height: 1.5625em;
+	margin-bottom:0.625em;
+	}
+
+blockquote {
+	margin:1em;
+	font-family:@body-font;	
+	font-style:italic;
+	font-weight:500;
+	font-size:2em;
+	line-height: 1.5em;
+}	
+
+sup, sub {
+	line-height:0px;
+}
+
+abbr, acronym {
+	border-bottom:1px dotted @grey;
+}
+
+address {
+	margin: 0px 0px 1.5em;
+	font-family:@body-font;
+	font-style:italic;
+}
+
+del {
+	color:@grey;
+}
+
+pre {
+	white-space: pre;
+	border-left: .685em lighten(@grey, 20%) solid;
+	padding: 2%;
+}
+
+pre code {
+	margin-left: 1em;
+}
+
+pre, code, tt {
+	font-size:1em;
+	font-family:'andale mono', 'lucida console', monospace;
+	line-height:1.5em;
+}
+
+/*---------------------LISTS-----------------------*/
+
+ul, ol      { 
+	margin: 0px 1.5em 1.5em 0px; 
+	padding-left: 1.5em; 
+	}
+	
+dl          { 
+	margin: 0px 0px 1.5em 0px; 
+	}
+dl dt       { 
+	font-weight: 700; 
+	}
+dd          { 
+	margin-left: 1.5em;
+	}	
+
+hr{
+    border: 0;
+    height: 1px;
+    background: lighten(@grey, 30%);
+    .GradientHr (@origin: left, @start: @white, @stop: @black, @start: @white) 
+}	
+
+/*----TABLES----*/
+
+table {
+	border: 1px solid @light-grey;
+	background: none repeat scroll 0 0 @white;
+	margin: 0 0 1.2em 0;
+	font-size: .875em;	
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.25rem;
+	text-align: left;
+	border: 1px solid @light-grey;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+
+/*-- FORM STYLES --*/
+
+legend {
+	color:@black;
+	font-family:@headline-font;
+	font-size: 1.125em;
+}
+
+fieldset {
+	display:none;
+}
+
+input[type=submit] {
+	min-height: 2.25em;
+	width:100%;
+	max-width: 8em;
+	background-color:@grey;
+	color:@white;
+	border: none;
+	.BorderRadius (23px);
+	.BoxShadow ();
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
+
+input[type=text],textarea,input[type=password] {
+	  .Transition(all 0.30s ease-in-out);
+	  .BorderRadius(4px);
+	  outline: none;
+	  width:100%;
+      max-width: 16.625em;
+	  min-height: 2.25em;
+	  border:2px solid @grey;
+	  padding: 6px 12px;
+	  font-size: 1em;
+	}
+
+input:focus,textarea:focus {
+	border: 2px solid @blue;
+	-webkit-animation: pulse 1.5s infinite ease-in-out;
+} 
+
+@-webkit-keyframes pulse {
+0% {
+-webkit-box-shadow: 0 0 8px rgba(51, 204, 255, 0.2);
+}
+50% {
+-webkit-box-shadow: 0 0 8px rgba(51, 204, 255, 0.9);
+}
+100% {
+-webkit-box-shadow: 0 0 8px rgba(51, 204, 255, 0.2);
+}
+}
+
+/*--Helper Classes--*/
+
+.trianglelink {
+	display: inline-block;
+    position: relative;
+    padding-left: 6px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
+
+.trianglelink:before {
+	content: "\25BA";
+    font-size: 80%;
+    display: inline-block;
+    padding-right: 3px;
+    pointer-events: none;
+    .Transition (@prop: all, @time: 0.3s, @ease: linear);
+}
+
+.trianglelink:hover:before {
+	color:darken(@blue, 10%);
+}
+
+
+
+
+
+
+/*-- @FONTFACE --*/
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/league_gothic-webfont-webfont.eot');
+    src: url('../fonts/league_gothic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont-webfont.ttf') format('truetype'),
+         url('../fonts/league_gothic-webfont-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
