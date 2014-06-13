@@ -1,6 +1,7 @@
 homegrown
 =========
 
+<<<<<<< HEAD
 template for a RWD design
 
 Hello friends.
@@ -14,3 +15,8 @@ And I am trying to faciliate a RWD grid that I like as oppossed to the big dogs 
 Stay tuned for random updates. And I am glad I figured the GUI for Github instructions on the net somehow. 
 I will get more comfortable with Terminal as my time goes forward but gosh darn it. I need stuff up now.
 
+=======
+Wordpress theme 
+
+Wordpress intergration of a site I had laying around. Meh..
+>>>>>>> dc6fe1e0474b566b48b3f0044679929701fa4827
