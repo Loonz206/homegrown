@@ -17,7 +17,7 @@
       <?php endif; ?>
     </div>
   </article>
-</main><!--/ END singlepost -->
+</main><!--/ END single.php -->
 
 
 
