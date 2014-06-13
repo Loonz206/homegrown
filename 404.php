@@ -1,26 +1,33 @@
 <?php get_header(); ?>
 
-<!-- Row for main content area -->
-	<div class="small-12 large-8 columns" role="main">
-	
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
-			</header>
-			<div class="entry-content">
-				<div class="error">
-					<p class="bottom"><?php _e('The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'FoundationPress'); ?></p>
-				</div>
-				<p><?php _e('Please try the following:', 'FoundationPress'); ?></p>
-				<ul> 
-					<li><?php _e('Check your spelling', 'FoundationPress'); ?></li>
-					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), home_url()); ?></li>
-					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'FoundationPress'); ?></li>
-				</ul>
-			</div>
-		</article>
+<!--single.php-->
+<main class="singlepost">
+  <article class="row">
+    <div class="small-12 large-8 large-centered columns">
+    <img src="http://placehold.it/720x405/" alt=""/>
+    <h2>Error 404 //</h2>
+    <p>Use the navigation above if you feel you have reached this in error. Or the wonderful search bar.</p>
+    <?php get_search_form(); ?>
 
-	</div>
-	<?php get_sidebar(); ?>
+
+      <?php if (have_posts()) : ?>
+        <?php the_title( '<h2>', ' //</h2>' ); ?>
+        <?php while(have_posts()) : the_post(); ?>
+          <?php the_content(''); ?>
+        <?php endwhile; ?>
+      <?php endif; ?>
+    </div>
+  </article>
+</main><!--/ END single.php -->
+
+
+
+<div class="row">
+  <div class="small-12 large-8 large-centered columns">
+    <div id="btt">
+      <a href="#Top"><button>Back to Top</button></a>
+    </div>
+  </div>
+</div>
 		
 <?php get_footer(); ?>

@@ -1433,6 +1433,7 @@ a.active {
 
 .singlepost {
 	padding-top: 80px;
+  min-height: 400px;
 }
 
 

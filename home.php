@@ -81,7 +81,7 @@ Template Name: Home Page
 </div>
 <div id="bio_pic" class="small-12 large-4 columns"><h2>His silly picture</h2>
   <figure>
-    <a href="about.html"><img src="http://localhost:8888/wp-content/uploads/2014/06/lenny.jpg" alt="" class="marginauto border"/></a>
+    <a href="http://localhost:8888/about/"><img src="http://localhost:8888/wp-content/uploads/2014/06/lenny.jpg" alt="" class="marginauto border"/></a>
   </figure></div>
 </div><!--/END ROW-->
 
