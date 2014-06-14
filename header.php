@@ -46,13 +46,13 @@
   <a id="Top"></a>
   <div class="row">
     <div id="logo" class="small-7 columns">
-      <a href="<?php echo get_option('home'); ?>" title="Lenny Peters - Web Designer/Front-End Developer"><img src="<?php bloginfo('template_url' );?>/images/apple-touch-icon.png" width="48px" alt=""/></a><span style="color:white;">Lenny Peters</span>
-    </div>
+      <a href="<?php echo get_option('home'); ?>" title="Lenny Peters - Web Designer/Front-End Developer"><img src="<?php bloginfo('template_url' );?>/images/apple-touch-icon.png" width="48px" alt=""/></a><span class="name">Lenny Peters</span>
+    </div><!-- /END #LOGO -->
     <a href="#menu" class="menu-link">Menu</a>
     <nav id="menu" role="navigation">
       <ul>
         <?php wp_list_pages('title_li='); ?>
       </ul>
-    </nav>
+    </nav><!--/END #MENU -->
   </div><!-- end ROW --> 
 </header>

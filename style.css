@@ -416,10 +416,9 @@ table {
     border-spacing: 0;
 }
 
-/*Foundation Grid System
-https://github.com/zurb/foundation
-MIT Open License 
-*/
+/* ==========================================================================
+   Grid System - Zurbish
+   ========================================================================== */
 
 .row {
   width: 100%;
@@ -868,7 +867,9 @@ MIT Open License
     
 
 
-/*---------------------EFFECTS-----------------------*/
+/* ==========================================================================
+   Effects
+   ========================================================================== */
 
 * {
 	-moz-box-sizing: border-box;
@@ -878,9 +879,14 @@ MIT Open License
 	-moz-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 	background-repeat: no-repeat;
 	vertical-align: middle;
 }
+
+/* ==========================================================================
+   Globals for RWD
+   ========================================================================== */
 
 img,
 embed,
@@ -890,7 +896,9 @@ max-width: 100% !important;
 height:auto;
 }
 
-/*---------------------ICON FONTS-----------------------*/
+/* ==========================================================================
+   ICON FONTS
+   ========================================================================== */
 
 @font-face {
 	font-family: 'entypo';
@@ -907,7 +915,9 @@ height:auto;
 	font-style: normal;
 }
 
-/*---------------------TYPE-----------------------*/
+/* ==========================================================================
+   GLOBALS AND TYPOGRAPHY
+   ========================================================================== */
 
 body {
 	font-family:'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -915,6 +925,51 @@ body {
 	line-height:1.5em !important;
 	color:#333333;
 	margin:auto !important;
+}
+
+body::before {
+  content:"";
+  position:fixed;
+  /**
+ * with different color values than the ones suggested
+ */
+ background-color: rgba(34,102,153,0.5);
+ background: -webkit-linear-gradient(skyblue 2px, transparent 2px),
+             -webkit-linear-gradient(0, skyblue 2px, transparent 2px),
+             -webkit-linear-gradient(skyblue 1px, transparent 1px),
+             -webkit-linear-gradient(0, skyblue 1px, transparent 1px);
+ background: -moz-linear-gradient(skyblue 1px, transparent 1px),
+             -moz-linear-gradient(0pt 50% , skyblue 1px, transparent 1px),
+             -moz-linear-gradient(skyblue 1px, transparent 1px),
+             -moz-linear-gradient(0pt 50% , skyblue 1px, transparent 1px);
+ background: linear-gradient(skyblue 2px, transparent 2px),
+             linear-gradient(0, skyblue 2px, transparent 2px),
+             linear-gradient(skyblue 1px, transparent 1px),
+             linear-gradient(0, skyblue 1px, transparent 1px);
+ background-size: 50px 50px,
+                  50px 50px,
+                  10px 10px,
+                  10px 10px ;
+ background-position: -2px -2px,
+                      -2px -2px,
+                      -1px -1px,
+                      -1px -1px ;
+  /*z-index:1;*/
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:.3;
+  pointer-events:none;
+}
+* {
+  -webkit-user-modify: read-write;
+  word-wrap: break-word;
+  -webkit-nbsp-mode: space;
+  -webkit-line-break: after-white-space;
+}
+a {
+  -webkit-user-modify: initial;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1021,7 +1076,9 @@ pre, code, tt {
 	line-height:1.5em;
 }
 
-/*---------------------LISTS-----------------------*/
+/* ==========================================================================
+   LIST
+   ========================================================================== */
 
 ul, ol      { 
 	margin: 0 1.5em 1.5em 0; 
@@ -1049,7 +1106,9 @@ dd          {
 	line-height:100px;
 }*/
 
-/*------HELPER CLASSES------*/
+/* ==========================================================================
+   HELPER CLASSES
+   ========================================================================== */
 
 .Absolute-Center {
   margin: auto;
@@ -1114,13 +1173,10 @@ dd          {
 	box-shadow: 3px 3px 2px #666666;
 }
 
-#bio figure img {
-	height: 280px;
-	width: 280px;
-	border-radius: 50%;
-}
 
-/*------RESPONSIVE NAV TOGGLE------*/
+/* ==========================================================================
+   RESPONSIVE NAV TOGGLE
+   ========================================================================== */
 
 nav a:link, nav a:visited {
 	font-family: 'Montserrat','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1205,7 +1261,9 @@ a.menu-link {
 		}
 
 
-/*----------TABLE STYLES & FORMS-----------*/
+/* ==========================================================================
+   TABLES AND FORMS
+   ========================================================================== */
 
 fieldset {
 	border:none;
@@ -1324,9 +1382,21 @@ button.large {
     width:12.5em; /* 200px / 16px */
 }
 
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
 footer {
-	background-color: #CCC;
-	width:100%;
+	background: #CCCCCC; /* Old browsers */
+  width:100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#bio figure img {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
 }
 
 #slider img {
@@ -1479,11 +1549,9 @@ a.active {
 	margin-left: -13px;
 }
 
-}
+}/*--/end bigger screens*/
 
-#quotebox {
-  margin-bottom: 20px;
-}
+
 
 
 

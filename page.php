@@ -3,8 +3,8 @@
 <!-- /END HEADER -->   
 
 <main class="singlepost">
-  <article class="row">
-    <div class="small-12 large-8 large-centered columns">
+  <div class="row">
+    <article class="small-12 large-8 large-centered columns">
       <?php while ( have_posts() ) : the_post(); ?>
             
       <h2 class="page-title"><?php the_title(); ?> //</h2>
@@ -17,8 +17,8 @@
       
     
     <?php endwhile; ?>
-    </div>
-  </article>
+    </article>
+  </div>
 </main><!--/ END singlepost -->
 
 

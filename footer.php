@@ -2,7 +2,7 @@
 
 
   <div class="row">
-   <div class="small-12 large-3 columns">
+   <section class="small-12 large-3 columns">
     <h5>Social</h5>
     <hr>
     <ul>
@@ -27,8 +27,8 @@
                 <i class="fa fa-github fa-stack-1x"></i>
               </span> Github</a></li>
             </ul>
-          </div>
-          <div class="small-12 large-6 columns">
+          </section>
+          <section class="small-12 large-6 columns">
             <h5>Recent Posts</h5>
             <hr>
             <ul>
@@ -36,13 +36,13 @@
               <?php $the_query = new WP_Query( 'showposts=5' ); ?>
 
               <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-              <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
+                <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
 
-            
+                
               <?php endwhile;?>
               
             </ul>
-          </div>
+          </section>
         </div><!--/END ROW-->
 
 

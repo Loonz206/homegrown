@@ -6,8 +6,8 @@
 
 <!--single.php-->
 <main class="singlepost">
-  <article class="row">
-    <div class="small-12 large-8 large-centered columns">
+  <div class="row">
+    <article class="small-12 large-8 large-centered columns">
 
       <?php if (have_posts()) : ?>
         <?php the_title( '<h2>', ' //</h2>' ); ?>
@@ -15,8 +15,8 @@
           <?php the_content(''); ?>
         <?php endwhile; ?>
       <?php endif; ?>
-    </div>
-  </article>
+    </article>
+  </div>
 </main><!--/ END single.php -->
 
 
